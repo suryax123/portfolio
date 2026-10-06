@@ -1,0 +1,25 @@
+# Render Blueprint — static site deployment (replaces Firebase Hosting)
+#
+# How to use:
+#   1. Push this repo to GitHub.
+#   2. In the Render dashboard: New > Blueprint ("Infrastructure as Code")
+#      and select this repo. Render will create the Static Site from this file.
+#   OR
+#      New > Static Site, and set these fields manually:
+#        - Build Command:  npm ci && npm run build
+#        - Publish Directory: dist
+#
+# The rewrite below maps all unknown paths to /index.html so client-side
+# (SPA) routes work after a refresh / deep link. It is skipped for assets
+# that actually exist on disk.
+
+services:
+  - type: static
+    name: portfolio
+    env: static
+    buildCommand: npm ci && npm run build
+    publishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
