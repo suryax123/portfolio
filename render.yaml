@@ -19,6 +19,11 @@ services:
     env: static
     buildCommand: npm ci && npm run build
     publishPath: dist
+    envVars:
+      # Vite 8 / rolldown require a recent Node. Pin it so the build never
+      # breaks on Render's default Node version.
+      - key: NODE_VERSION
+        value: "22.12.0"
     routes:
       - type: rewrite
         source: /*

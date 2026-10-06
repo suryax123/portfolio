@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <!-- TODO: Replace YOUR_DOMAIN with your real Render/custom domain -->
-    <loc>https://YOUR_DOMAIN/</loc>
+    <loc>https://portfolio-syr6.onrender.com/</loc>
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

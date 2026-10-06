@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: Replace YOUR_DOMAIN with your real Render/custom domain
-Sitemap: https://YOUR_DOMAIN/sitemap.xml
+Sitemap: https://portfolio-syr6.onrender.com/sitemap.xml
