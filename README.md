@@ -2,7 +2,7 @@
 
 An immersive portfolio built with React, Vite, Tailwind CSS, GSAP, and Framer Motion, deployed as a static site on Render. Features smooth scroll animations, a responsive Bento Grid design, and a custom AI Chat Widget.
 
-🔗 **Live Link:** *(update this once you have your Render/custom domain)*
+🔗 **Live Link:https://portfolio-syr6.onrender.com
 
 ---
 
@@ -115,5 +115,3 @@ The repo includes a `render.yaml` blueprint that pre-configures a Static Site. T
    - **Publish Directory:** `dist`
 3. Click **Create Static Site**.
 
-> [!TIP]
-> After your first deploy, replace the `YOUR_DOMAIN` placeholder in `index.html`, `public/robots.txt`, and `public/sitemap.xml` with your real Render URL or custom domain (e.g. `https://you.onrender.com`).
